@@ -1,0 +1,286 @@
+@font-face {
+    font-family: jjk;
+    src: url(../../../../assets/fonts/Jujutsu\ Kaisen.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../../../../assets/img/gojo\ bg.jpg);
+    background-size: cover;
+}
+label{
+    font-family: "Open Sans", sans-serif;
+}
+.side{
+    height: 35%;
+    width: 180px;
+    position: absolute;
+    background-color: black;
+    transition: 0.5 ease;
+    transform: translateX(-180px);
+}
+.side h1{
+    color: whitesmoke;
+    font-weight: 800;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+.side ul li{
+    list-style: none;
+}
+.side ul li a{
+    color: white;
+    font-weight: 700;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2 ease-out;
+}
+.side ul li:hover a{
+    color: black;
+    background-color: whitesmoke;
+}
+.side ul li a i{
+    width: 40px;
+    text-align: center;
+}
+input{
+    display: none;
+    visibility: hidden;
+}
+.toggle{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 10px;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+}
+.toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: whitesmoke;
+    border-radius: 5opx;
+    transition: 0.3s ease;
+}
+.toggle .top_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toggle .middle_line{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toggle .bottom_line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+input:checked ~ .toggle .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+input:checked ~ .toggle .bottom_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+input:checked ~ .toggle .middle_line{
+    opacity: 0;
+    transform: translateX(20px);
+}
+input:checked ~ .side{
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
+}
+.hero{
+    font-family: jjk;
+    max-width: 600px;
+    float: left;
+    color: #000000;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    width: 10pv;
+    padding: 40px;
+}
+.hero h1{
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.2;
+    -webkit-text-stroke: 0.5px #9FFDFF;
+}
+.card{
+    font-family: jjk;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    margin-left: 10px;
+    bottom: 50%;
+    height: 35%;
+    width: 600px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    transition: 1s box-shadow;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.card:hover::before,.card:hover::after{
+    display: block;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 600px;
+    background-color: azure;
+    border-radius: 15px;
+    z-index: -1;
+    animation: 0.5s clockwise infinite;
+}
+.card:hover::after{
+    background: white;
+    animation: 2s counterclockwise infinite;
+}
+@keyframes clockwise
+{
+    0%
+    {
+        top: -5px;
+        left: 0;
+    }
+    12%
+    {
+        top: -2px;
+        left: 2;
+    }
+    25%
+    {
+        top: 0px;
+        left: 5px;
+    }
+    37%
+    {
+        top: 2px;
+        left: 2px;
+    }
+    50%
+    {
+        top: 5px;
+        left: 0px;
+    }
+    62%
+    {
+        top: 2px;
+        left: -2px;
+    }
+    75%
+    {
+        top: 0px;
+        left: -5px;
+    }
+    87%
+    {
+        top: -2px;
+        left: -2px;
+    }
+    100%
+    {
+        top: -5px;
+        left: 0px;
+    }
+}
+@keyframes counterclockwise
+{
+    0%
+    {
+        top: -5px;
+        left: 0;
+    }
+    12%
+    {
+        top: -2px;
+        left: 2;
+    }
+    25%
+    {
+        top: 0px;
+        left: 5px;
+    }
+    37%
+    {
+        top: 2px;
+        left: 2px;
+    }
+    50%
+    {
+        top: 5px;
+        left: 0px;
+    }
+    62%
+    {
+        top: 2px;
+        left: -2px;
+    }
+    75%
+    {
+        top: 0px;
+        left: -5px;
+    }
+    87%
+    {
+        top: -2px;
+        left: -2px;
+    }
+    100%
+    {
+        top: -5px;
+        left: 0px;
+    }
+}
+.button a{
+    font-family: "Oswald", sans-serif;
+    height: 60px;
+    width: 150px;
+    background-color: whitesmoke;
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    left: 85%;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px  0px grey,0px 8px 20px #222222;
+    transition: all 0.2 ease;
+}
+
+.button a:active{
+    box-shadow: none;
+    top: 8px;
+}

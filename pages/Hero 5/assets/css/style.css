@@ -1,29 +1,18 @@
+@font-face {
+    font-family: DOOM;
+    src: url(../../../../assets/fonts/MFDOOM.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
 }
 body{
-    background-image: url(../img/Tyler\ The\ Creator.jpg);
-    background-size: auto;
+    background-image: url(../../../../assets/img/doom\ bg.jpg);
+    background-size: 1000px;
 }
-.title{
-    width: 100%;
-    position: absolute;
-    top: 30%;
-    transform: translateY(-70%);
-    text-align: center;
-    color: black;
-}
-.title h2{
-    font-size: 70px;
-    margin-top: 80px;
-}
-.title p{
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
+label{
+    font-family: "Open Sans", sans-serif;
 }
 .side{
     height: 35%;
@@ -33,7 +22,7 @@ body{
     transition: 0.5 ease;
     transform: translateX(-180px);
 }
-h1{
+.side h1{
     color: whitesmoke;
     font-weight: 800;
     text-align: right;
@@ -41,10 +30,10 @@ h1{
     padding-right: 30px;
     pointer-events: none;
 }
-ul li{
+.side ul li{
     list-style: none;
 }
-ul li a{
+.side ul li a{
     color: white;
     font-weight: 700;
     padding: 5px 0;
@@ -53,11 +42,11 @@ ul li a{
     text-decoration: none;
     transition: 0.2 ease-out;
 }
-ul li:hover a{
+.side ul li:hover a{
     color: black;
     background-color: whitesmoke;
 }
-ul li a i{
+.side ul li a i{
     width: 40px;
     text-align: center;
 }
@@ -119,4 +108,65 @@ input:checked ~ .toggle .middle_line{
 input:checked ~ .side{
     transform: translateX(0);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
+}
+.hero{
+    font-family: DOOM;
+    color: black;
+    width: 700px;
+    height: 150px;
+    font-size: 70px;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: -2%;
+}
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    left: 55%;
+    top: 33%;
+    gap: 1rem;
+    width: 35rem;
+}
+.card{
+    position: relative;
+    left: 0;
+    width: 3rem;
+    border-radius: 5rem;
+    height: 20rem;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    flex: .15;
+}
+.card img{
+    position: relative;
+    height: 20rem;
+    object-fit: cover;
+}
+.button a{
+    font-family: "Oswald", sans-serif;
+    height: 60px;
+    width: 150px;
+    background-color: whitesmoke;
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    left: 85%;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px  0px grey,0px 8px 20px #222222;
+    transition: all 0.2 ease;
+}
+
+.button a:active{
+    box-shadow: none;
+    top: 8px;
 }

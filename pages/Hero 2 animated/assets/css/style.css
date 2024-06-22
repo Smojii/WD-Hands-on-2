@@ -1,0 +1,222 @@
+@font-face {
+    font-family: lol;
+    src: url(../../../../assets/fonts/BeaufortforLOL-Bold.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../../../../assets/img/shaco\ bg.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+label{
+    font-family: "Open Sans", sans-serif;
+}
+.side{
+    height: 35%;
+    width: 180px;
+    position: absolute;
+    background-color: black;
+    transition: 0.5 ease;
+    transform: translateX(-180px);
+}
+.side h1{
+    color: whitesmoke;
+    font-weight: 800;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+.side ul li{
+    list-style: none;
+}
+.side ul li a{
+    color: white;
+    font-weight: 700;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2 ease-out;
+}
+.side ul li:hover a{
+    color: black;
+    background-color: whitesmoke;
+}
+.side ul li a i{
+    width: 40px;
+    text-align: center;
+}
+input{
+    display: none;
+    visibility: hidden;
+}
+.toggle{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 10px;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+}
+.toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: whitesmoke;
+    border-radius: 5opx;
+    transition: 0.3s ease;
+}
+.toggle .top_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toggle .middle_line{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toggle .bottom_line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+input:checked ~ .toggle .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+input:checked ~ .toggle .bottom_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+input:checked ~ .toggle .middle_line{
+    opacity: 0;
+    transform: translateX(20px);
+}
+input:checked ~ .side{
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
+}
+.hero{
+    max-width: 600px;
+    font-family: lol;
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.hero h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #C7A86D;
+}
+
+.hero p {
+    margin: 30px 0 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
+.main{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    bottom: 0;
+}
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container .card{
+    position: relative;
+    max-width: 150px;
+    height: 110px;
+    background-color: #C7A86D;
+    margin: 50px 20px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover{
+    height: 220px;
+
+}
+.container .card .image{
+    position: relative;
+    width: 125px;
+    height: 125px;
+    top: -60px;
+    left: -3px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .image img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+.container .card .description{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-family: lol;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3 ease-in-out;
+}
+.container .card:hover .description{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+.button a{
+    font-family: "Oswald", sans-serif;
+    height: 60px;
+    width: 150px;
+    background-color: whitesmoke;
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    left: 85%;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px  0px grey,0px 8px 20px #222222;
+    transition: all 0.2 ease;
+}
+
+.button a:active{
+    box-shadow: none;
+    top: 8px;
+}
