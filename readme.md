@@ -6,10 +6,10 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/pic.jpg" alt="profile" width="150" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Hands on 2</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
@@ -20,7 +20,7 @@
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=Smojii/WD-Hands-on-2)
 
 ---
 
@@ -46,7 +46,7 @@
       <a href="#rules-and-principles">Rules and Principles</a>
     </li>
     <li>
-      <a href="#resources">Resources</a>
+      <a href="#deployment">Deploymet Link</a>
     </li>
   </ol>
 </details>
@@ -57,7 +57,7 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+This project showcase Heros and Cards.
 
 Guiding Question:
 - What is the project
@@ -68,15 +68,14 @@ Guiding Question:
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- Placement of Hero text
+- Different styles of Cards
+- Different styles of Animations
 
 ### Technology
 <!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 
 ## Rules and Principles
 1. Always use ***WD-*** in the front of the Title of the Project for the Subject followed by your custom naming.
@@ -111,4 +110,11 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Expandable Image Gallery using HTML and CSS  Web Dev Wizard | Card animation | https://www.youtube.com/watch?v=A05Eu7tli0M |
+| Css Div Image Hover Html, Css image card hover effect | Card animation | https://www.youtube.com/watch?v=Zz8A4NqoLrE&t=179s |
+| 3D Card Hover Effect Using HTML CSS Only | Card animation | https://www.youtube.com/watch?v=Ft9t5WKFVT8 |
+| Div Gradient Border Hover Effect In HTML and CSS With Source Code | Card animation | https://www.youtube.com/watch?v=-Nu_fgBg3P0&t=167s |
+| CSS SCAN | Card shadow-box | https://getcssscan.com/css-box-shadow-examples |
+| Mastering CSS Card Hover Effects Elevate Your Web Designs | Card animation | https://www.youtube.com/watch?v=3-s3-Af3sqQ |
+| Sidebar Navigation Menu With Animated Toggle Bar Using HTML And CSS  CSS Side Navbar Menu | Sidebar Design | https://www.youtube.com/watch?v=1TZjgQ0Osic |
+| Pinterest | Soure of Image | https://ph.pinterest.com |
