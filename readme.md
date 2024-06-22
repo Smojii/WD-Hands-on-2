@@ -118,3 +118,6 @@ WD-ProjectName
 | Mastering CSS Card Hover Effects Elevate Your Web Designs | Card animation | https://www.youtube.com/watch?v=3-s3-Af3sqQ |
 | Sidebar Navigation Menu With Animated Toggle Bar Using HTML And CSS  CSS Side Navbar Menu | Sidebar Design | https://www.youtube.com/watch?v=1TZjgQ0Osic |
 | Pinterest | Soure of Image | https://ph.pinterest.com |
+
+## Deployment link
+https://smojii.github.io/WD-Hands-on-2/
